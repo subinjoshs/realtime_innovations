@@ -1,0 +1,234 @@
+.emp_details {
+    width: 100%;
+}
+
+.emp_details .header {
+    background-color: #1DA1F2;
+    padding: 16px;
+    color: white;
+    display: flex;
+}
+.emp_details .header img{
+    float: right;
+    margin-left: 80%;
+}
+
+.emp_form {
+    width: 100%;
+    /* background-color: red; */
+}
+
+.empName img,
+.emp_role img {
+    width: 24px;
+    height: 24px;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.emp_form .empName {
+    display: flex;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.emp_form .empName input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.emp_form .emp_role {
+    display: flex;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.emp_form .emp_role select {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.emp_form .emp_dates {
+    display: flex;
+    height: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+.emp_form .emp_dates .start_data {
+    width: 45%;
+    display: flex;
+    border: 1px solid #E5E5E5;
+
+}
+
+.emp_form .emp_dates .start_data input {
+    width: 92%;
+    border: none;
+    outline: none;
+}
+
+.emp_form .emp_dates .arw_img {
+    width: 10%;
+}
+
+.emp_form .emp_dates .arw_img img,
+.start_data img,
+.end_date img {
+    margin-top: 6px;
+    margin-left: 6px;
+
+}
+
+.emp_form .emp_dates .arw_img img {
+    margin-left: 50px;
+    margin-top: 12px;
+}
+
+.emp_form .emp_dates .end_date {
+    width: 45%;
+    display: flex;
+    border: 1px solid #E5E5E5;
+
+}
+
+.emp_form .emp_dates .end_date input {
+    width: 92%;
+    border: none;
+    outline: none;
+}
+
+.mdateinput .md-drppicker {
+    top: auto;
+    left: 51.5px !important;
+    right: auto;
+    /* background-color: red; */
+}
+
+.frm_btns {
+    float: right;
+    position: relative;
+    top: 240px;
+}
+
+.frm_btns button {
+    padding: 20px;
+    margin-right: 15px;
+}
+
+.frm_btns button.cacl_btn {
+    background: #EDF8FF;
+    border: none;
+    border-radius: 10px;
+    color: #1DA1F2;
+    font-weight: 500;
+    size: 14px;
+    font-family: roboto;
+}
+
+.frm_btns button.sve_btn {
+    background: #1DA1F2;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+    size: 14px;
+    font-family: roboto;
+}
+
+::ng-deep ngx-daterangepicker-material .ranges ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+
+::ng-deep ngx-daterangepicker-material .ranges ul li {
+    margin-right: 10px;
+    text-align: center;
+    flex: 1 0 45%;
+    display: flex;
+    justify-content: center;
+}
+
+
+::ng-deep ngx-daterangepicker-material .ranges ul li button {
+    width: 100%;
+    text-align: center !important;
+    padding: 10px;
+    background-color: #EDF8FF !important;
+    color: #1DA1F2;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+::ng-deep ngx-daterangepicker-material .ranges ul li button:hover {
+    background-color: #1DA1F2 !important;
+    color: white;
+}
+
+::ng-deep ngx-daterangepicker-material div.md-drppicker {
+    top: auto;
+    left: 50px !important;
+    right: auto;
+    padding: 0 16px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    border-radius: 10px;
+}
+
+::ng-deep ngx-daterangepicker-material .md-drppicker td.active,
+.md-drppicker td.active:hover {
+    background-color: #1DA1F2;
+    border-radius: 30px !important
+}
+
+::ng-deep ngx-daterangepicker-material .md-drppicker .ranges ul li button.active {
+    background: #1DA1F2 !important;
+}
+
+.emp_role::after {
+    content: '';
+    background: url('./../../../assets/images/down_arrow.svg') no-repeat center;
+    position: absolute;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+    top: 165px !important;
+    margin-right: 1px;
+
+}
+
+select {
+    background-color: white !important;
+}
+
+@media only screen and (min-width: 350px) and (max-width:1024px) {
+    .emp_form .emp_dates .arw_img img {
+        margin-left: 15px !important;
+        margin-top: 12px;
+    }
+
+    .frm_btns {
+        top: 460px;
+    }
+    .emp_details .header img{
+        margin-left: 125px;
+    }
+}

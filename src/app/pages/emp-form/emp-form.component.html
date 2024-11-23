@@ -1,0 +1,47 @@
+<div class="emp_details">
+    <div class="header">
+        <app-page-title>
+            <h3>{{title}}</h3>
+        </app-page-title>
+        <img *ngIf="storedData" src="../../../assets/images/delete_img.svg" (click)="delData(storedData?.emp_id)">
+    </div>
+    <div class="emp_form">
+        <form [formGroup]="empForm">
+            <div class="empName">
+                <img src="./../../../assets/images/person_FILL0_wght300_GRAD0_opsz24 (2) 1.svg">
+                <input class="employee_Name" placeholder="Employee name" formControlName="empName" required>
+            </div>
+            <div class="emp_role">
+                <img src="./../../../assets/images/work_FILL0_wght300_GRAD0_opsz24 1.svg">
+                <select formControlName="role" value="" required #roleSelect>
+                    <option value="" disabled selected hidden>Select Role</option>
+                    <option value="Product Designer">Product Designer</option>
+                    <option value="Flutter Developer">Flutter Developer</option>
+                    <option value="QA Tester">QA Tester</option>
+                    <option value="Product Owner">Product Owner</option>
+                </select>
+            </div>
+            <div class="emp_dates">
+                <div class="start_data">
+                    <img src="../../../assets/images/event_FILL0_wght300_GRAD0_opsz24 (1) 1.svg" height="24" width="24">
+                    <input type="text" placeholder="Today" class="mdateinput" ngxDaterangepickerMd
+                        [singleDatePicker]="true"  [autoApply]="true" readonly [ranges]="customStartRanges" formControlName="startDate" required>
+                </div>
+                <div class="arw_img">
+                    <img src="../../../assets/images/Vector.svg" width="16" height="16">
+                </div>
+                <div class="end_date">
+                    <img src="../../../assets/images/event_FILL0_wght300_GRAD0_opsz24 (1) 1.svg" height="24" width="24">
+                    <input type="text" placeholder="No Date" class="mdateinput" ngxDaterangepickerMd
+                        [singleDatePicker]="true" [keepCalendarOpeningWithRange]="true"  [autoApply]="true" readonly [ranges]="customEndRanges" formControlName="endDate">
+                </div>
+            </div>
+            <div class="frm_btns">
+                <div>
+                    <button class="cacl_btn" (click)="clrForm()">Cancel</button>
+                    <button class="sve_btn"  (click)="formSubmit(storedData?.emp_id)">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

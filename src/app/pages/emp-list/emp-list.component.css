@@ -1,0 +1,257 @@
+.emp_lst {
+    width: 100%;
+}
+
+.emp_lst .header {
+    background-color: #1DA1F2;
+    padding: 16px;
+    color: white
+}
+
+.emp_lst_dt .no_emp_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.emp_lst_dt .no_emp_img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.ad_emp {
+    float: right;
+    margin-right: 16px;
+}
+
+.ad_emp a {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ad_emp img {
+    max-width: 100%;
+    height: auto;
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    right: 13px;
+    top: 495px;
+}
+
+.c_dt p,
+h4,
+span {
+    margin: 0;
+    size: 14px;
+    color: #949C9E;
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+
+.p_dt p,
+h4,
+span {
+    margin: 0;
+    size: 14px;
+    color: #949C9E;
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+
+.c_dt h4 {
+    color: #323238;
+}
+
+.p_dt h4 {
+    color: #323238;
+}
+
+.c_dt,
+.p_dt {
+    line-height: 20px;
+    margin-bottom: -39px;
+    width: 100%;
+}
+
+.crnt_emp .c_dt:first-of-type {
+    margin-top: 54px;
+}
+
+.prev_emp .p_dt:first-of-type {
+    margin-top: 54px;
+}
+
+.emp_title {
+    color: #1DA1F2;
+    background-color: #F2f2F2;
+    padding: 16px;
+    margin: 0;
+    position: fixed;
+    width: 47.5%;
+    z-index: 999;
+}
+
+.crnt_emp {
+    height: 400px !important;
+    overflow-y: scroll;
+    max-height: 400px;
+    width: 50%;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.03), 0 16px 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.crnt_emp::-webkit-scrollbar,
+.prev_emp::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.prev_emp {
+    height: 400px;
+    overflow-y: scroll;
+    max-height: 400px;
+    width: 50%;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.03), 0 16px 24px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.emp_list {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.emp_list .c_dt.swiped-left,
+.emp_list .p_dt.swiped-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.cmp_data {
+    display: flex;
+    transition: margin-left 0.3s ease, transform 0.3s ease;
+}
+
+.swiped {
+    margin-left: -50px;
+    transition: margin-left 0.3s ease;
+}
+
+.del_btn {
+    background-color: #F34642;
+    width: 50px;
+    height: 60px;
+    margin-top: 54px;
+}
+
+.del_btn img {
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.del_data_desktop {
+    position: relative;
+    position: relative;
+    top: 64px;
+    margin-right: 40px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-btn {
+    background-color: #f0f0f0;
+    padding: 8px 16px;
+    border: none;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #ddd;
+}
+
+.menu-buttons button:last-child {
+    margin-bottom: 0;
+}
+
+.del_data_desktop button {
+    background: #EDF8FF;
+    border: none;
+    border-radius: 10px;
+    color: #1DA1F2;
+    font-weight: 500;
+    size: 14px;
+    font-family: roboto;
+}
+
+.del_data_desktopbutton:hover() {
+    background-color: #1DA1F2 !important;
+    color: white;
+}
+
+.edt_icon {
+    display: none;
+}
+
+@media only screen and (min-width: 350px) and (max-width:1024px) {
+    .dly_edt {
+        display: block;
+    }
+
+    .del_data_desktop {
+        display: none;
+    }
+
+    .ad_emp {
+        margin-top: 15px;
+    }
+
+    .emp_title {
+        width: 100%;
+    }
+
+    .ad_emp img {
+        top: 700px !important;
+    }
+
+    .emp_list {
+        display: block;
+        text-align: left;
+    }
+
+    .crnt_emp {
+        width: 100%;
+        max-height: 300px;
+        height: 300px !important;
+        box-shadow: none;
+    }
+
+    .prev_emp {
+        width: 100%;
+        max-height: 300px;
+        height: 300px !important;
+        box-shadow: none;
+    }
+
+}
+
+/* dist/realtime_innovations_employee/browser */
